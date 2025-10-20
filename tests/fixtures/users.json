@@ -1,0 +1,39 @@
+{
+  "validUser": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "age": 30
+  },
+  "invalidUsers": [
+    {
+      "name": "",
+      "email": "john@example.com",
+      "description": "Empty name"
+    },
+    {
+      "name": "John",
+      "email": "invalid-email",
+      "description": "Invalid email"
+    },
+    {
+      "name": "John",
+      "email": "john@example.com",
+      "age": 15,
+      "description": "Age below minimum"
+    },
+    {
+      "name": "John",
+      "email": "john@example.com",
+      "age": 200,
+      "description": "Age above maximum"
+    }
+  ],
+  "edgeCases": {
+    "maxLengthName": "a".repeat(100),
+    "minLengthName": "Jo",
+    "specialCharactersName": "O'Brien-Smith",
+    "unicodeName": "José García",
+    "minAge": 18,
+    "maxAge": 150
+  }
+}
