@@ -5,9 +5,8 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Open Finance - Personal Finance Dashboard',
-  description: 'Track and manage your personal finances with ease',
-  viewport: 'width=device-width, initial-scale=1',
+  title: 'Open Finance - Vereinsfinanzverwaltung',
+  description: 'Moderne Finanzverwaltung für Vereine',
 }
 
 export default function RootLayout({
@@ -16,10 +15,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        {children}
-      </body>
+    <html lang="de">
+      <body className={inter.className}>{children}</body>
     </html>
   )
 }

@@ -19,6 +19,7 @@
       "@/lib/*": ["./lib/*"],
       "@/types/*": ["./types/*"],
       "@/app/*": ["./app/*"],
+      "@/components/*": ["./components/*"],
       "@/database/*": ["./database/*"]
     },
     "baseUrl": ".",
